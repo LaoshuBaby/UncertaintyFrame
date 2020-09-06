@@ -1,0 +1,131 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{header-n2828}{%
+\section{目前已有的不确定度计算器}\label{header-n2828}}
+
+欢迎随时补充
+
+您可随时进行检索
+
+https://github.com/search?p=1\&q=不确定度\&type=Repositories
+
+\hypertarget{header-n2833}{%
+\subsection{GitHub上已有的不确定度计算器}\label{header-n2833}}
+
+\begin{longtable}[]{@{}llllllllllll@{}}
+\toprule
+地址 & 作者 & 使用语言 & 开发环境 & 协议 & 是否打包可直接运行 &
+是否有文档 & 支持的平台 & 最新版本 & 最后更新（yyyy.mm.dd） & 星星数 &
+备注\tabularnewline
+\midrule
+\endhead
+https://github.com/zzh1996/Physics-Experiment-Calculator & zzh1996 & C\#
+& VC\#.net & 无 & 否 & 否 & 未编译 & 未发布 & 2016.08.02 & \textbf{3} &
+大物实验 不确定度计算器\tabularnewline
+https://github.com/cutecutecat/Uncertainty-Calculator & cutecutecat &
+MATLAB & MATLAB未知版本 & 无 & 否 & 否 & MATLAB & 未发布 & 2017.06.16 &
+0 & 不确定度计算器\tabularnewline
+https://github.com/Tefx/CUM & Tefx & C、Python & Cython & 无 & 否 & 否 &
+未编译 & 未发布 & 2013.01.24 & 0 & 不确定度计算\tabularnewline
+https://github.com/Tefx/CUM\emph{Mod}Library & Tefx & Python & Python &
+无 & 否 & 否 & 脚本语言 & 未发布 & 2013.01.13 & 0 &
+不确定度计算模型库\tabularnewline
+https://github.com/lsmind/Physical-experiment & lsmind & Python & Python
+& \textbf{LGPL-3.0 license} & \textbf{是} & \textbf{是} & 脚本语言 &
+\textbf{v0.9beta} & 2019.08.15 & 0 & 物理不确定度技术\tabularnewline
+https://github.com/Robin0218/JLU-physics-experiment- & Robin0218 & C &
+纯代码 & 无 & 否 & 否 & 未编译 & 未发布 & 2019.11.9 & 0 &
+吉林大学大物实验不确定度计算（A类，合成不确定度）\tabularnewline
+https://github.com/LinsongGuo/Physics-Uncertainty-Calculator &
+LinsongGuo & HTML、TeX & 纯代码 & 无 & \textbf{是} & \textbf{是} &
+脚本语言 & 未发布 & 2019.04.16 & 0 &
+大学物理实验不确定度计算器\tabularnewline
+https://github.com/JasonGuo98/physics-data-analyze & JasonGuo98 & Python
+& Python & 无 & 否 & 否 & 脚本语言 & 未发布 & 2018.10.04 & 0 &
+物理实验数据，计算不确定度等\tabularnewline
+https://github.com/Anleeos/Physicaldata-error-analysis & Anleeos &
+C++、C & Visual Studio 2015及更新版本 & 无 & \textbf{仅Debug} & 否 &
+未编译 & 未发布 & 2019.04.24 & 0 &
+处理大学物理实验中的不确定度。\tabularnewline
+https://github.com/Frostl4/- & Frostl4 & 无 & 无 & \textbf{GPL-3.0} & 否
+& 否 & 未编译 & 未发布 & 2019.04.19 & 0 &
+大学物理实验不确定度计算\tabularnewline
+https://github.com/yuweikong/physics & yuweikong & Python & Python & 无
+& 否 & 否 & 脚本语言 & 未发布 & 2019.10.27 & 1 &
+大学物理实验求不确定度A，C\tabularnewline
+https://github.com/zhc0757/Experiment\emph{Data}Preprocess & zhc0757 &
+C++ & Visual Studio & \textbf{GPL-3.0} & \textbf{是} & 否 &
+\textbf{X86、X64} & 未发布 & 2018.10.19 & 0 &
+用于在大学物理实验中预处理数据：剔除异常数据、计算不确定度\tabularnewline
+https://github.com/LoneWolfEric/College\emph{Physics}Experiment\emph{Data}Process
+& LoneWolfEric & C++ & VSCode & 无 & \textbf{是} & 否 &
+\textbf{可能为X86或X64} & 未发布 & 2018.04.17 & 1 &
+用于处理大物实验数据，输入原始数据，自动获得平均值，第一类、第二类不确定度\tabularnewline
+& & & & 无 & 否 & 否 & & & & &\tabularnewline
+& & & & 无 & 否 & 否 & & & & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{header-n3043}{%
+\subsection{互联网上已有的不确定度计算器}\label{header-n3043}}
+
+\end{document}
